@@ -1,0 +1,42 @@
+#!/usr/bin/make -f
+# See debhelper(7) (uncomment to enable)
+# output every command that modifies files on the build system.
+export DH_VERBOSE = 1
+
+#include /usr/share/dpkg/buildflags.mk
+#include /usr/share/dpkg/pkg-info.mk
+
+# see FEATURE AREAS in dpkg-buildflags(1)
+#export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+
+# see ENVIRONMENT in dpkg-buildflags(1)
+# package maintainers to append CFLAGS
+#export DEB_CFLAGS_MAINT_APPEND  = -Wall -pedantic
+# package maintainers to append LDFLAGS
+#export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
+
+cmake_options =                                              \
+    -DBUILD_SHARED_LIBS:BOOL=ON                              \
+    -DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo                 \
+    -DCMAKE_LIBRARY_PATH:PATH=lib/$(DEB_HOST_MULTIARCH)      \
+    -DCMAKE_SKIP_INSTALL_RPATH:BOOL=ON                       \
+    -DBUILD_DOCUMENTATION:BOOL=OFF                           \
+    -DBUILD_EXAMPLES:BOOL=OFF                                \
+    -DBUILD_TESTING:BOOL=OFF                                 \
+    -DMERCURY_ENABLE_DEBUG:BOOL=ON                           \
+    -DMERCURY_INSTALL_LIB_DIR:PATH=lib/$(DEB_HOST_MULTIARCH) \
+    -DMERCURY_USE_BOOST_PP:BOOL=ON                           \
+    -DMERCURY_USE_CHECKSUMS:BOOL=OFF                         \
+    -DMERCURY_USE_SYSTEM_BOOST:BOOL=ON                       \
+    -DMERCURY_USE_XDR:BOOL=OFF                               \
+    -DNA_USE_SM:BOOL=ON                                      \
+    -DNA_USE_OFI:BOOL=ON                                     \
+    $(NULL)
+
+%:
+	dh $@
+
+
+override_dh_auto_configure:
+	dh_auto_configure -- $(cmake_options)
+
