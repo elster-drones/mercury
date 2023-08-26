@@ -1,0 +1,262 @@
+mercury (2.3.0) unstable; urgency=medium
+  [ Jerome Soumagne ]
+  * Update to 2.3.0
+  * Add hg_info tool
+  * Remove na_ucx_src_port.patch and old patches
+  * Fix license
+
+ -- Jerome Soumagne <jerome.soumagne@intel.com>  Wed,  7 Jun 2023 11:00:00 -0600
+
+mercury (2.3.0~rc5-1) unstable; urgency=medium
+  [ Jerome Soumagne ]
+  * Update to 2.3.0rc5
+  * Remove na_ucx.c patch and add temporary na_ucx_src_port.patch
+  * Update build to make use of NA dynamic plugins
+  * Fix source URL and package perf tests
+
+ -- Jerome Soumagne <jerome.soumagne@intel.com>  Tue, 25 Apr 2023 11:00:00 -0600
+
+mercury (2.2.0-6) unstable; urgency=medium
+  [ Alexander Oganezov ]
+  * Regenerate LEAP15.4 rpms
+
+ -- Alexander Oganezov <alexander.a.oganezov@intel.com>  Thu, 22 Dec 2022 10:39:15 -0500
+
+mercury (2.2.0-5) unstable; urgency=medium
+  [ Joseph Moore ]
+  * Update na_ucx.c patch to support reconnect following disconnection..
+
+ -- Joseph Moore <joseph.moore@intel.com>  Thu, 17 Nov 2022 10:39:15 -0500
+
+mercury (2.2.0-4) unstable; urgency=medium
+  [ Joseph Moore ]
+  * Update na_ucx.c patch to include UCX status to NA error mapping.
+
+ -- Joseph Moore <joseph.moore@intel.com>  Wed, 5 Oct 2022 11:07:30 -0500
+
+mercury (2.2.0-3) unstable; urgency=medium
+  [ Joseph Moore ]
+  * Fix defect in connect function.
+
+ -- Joseph Moore <joseph.moore@intel.com>  Tue, 20 Sep 2022 10:11:20 -0500
+
+mercury (2.2.0-2) unstable; urgency=medium
+  [ Joseph Moore ]
+  * Add ucx patch to include local address in ep for single IB device.
+
+ -- Joseph Moore <joseph.moore@intel.com>  Fri, 9 Sep 2022 13:33:04 -0500
+
+mercury (2.2.0-1) unstable; urgency=medium
+  [ Jerome Soumagne ]
+  * Update to 2.2.0
+
+ -- Jerome Soumagne <jerome.soumagne@intel.com>  Fri, 5 Aug 2022 17:09:23 -0600
+
+mercury (2.2.0~rc6-2) unstable; urgency=medium
+  [ Jerome Soumagne ]
+  * Rebuild after libfabric rpm dropped CXI compat patch
+  * Drop CXI compat patch
+
+ -- Jerome Soumagne <jerome.soumagne@intel.com>  Mon, 1 Aug 2022 18:25:23 -0600
+
+mercury (2.2.0~rc6-1) unstable; urgency=medium
+  [ Jerome Soumagne ]
+  * Update mercury to 2.2.0~rc6
+
+ -- Jerome Soumagne <jerome.soumagne@intel.com>  Mon, 27 Jun 2022 16:50:23 -0600
+
+mercury (2.1.0~rc4-9) unstable; urgency=medium
+  [ Joseph Moore ]
+  * Update ucx patch to disable unified mode.
+
+ -- Joseph Moore <joseph.moore@intel.com>  Fri, 22 Apr 2022 20:19:07 -0400
+
+mercury (2.1.0~rc4-8) unstable; urgency=medium
+  [ Brian J. Murrell ]
+  * Build with ucx subpackage on supported platforms
+
+ -- Brian J. Murrell <brian.murrell@intel.com>  Fri, 1 Apr 2022 19:54:24 -0500
+
+mercury (2.1.0~rc4-7) unstable; urgency=medium
+  [ Joseph Moore ]
+  * Apply daos-9679 address parsing change and active message revision to na_ucx.c.
+
+ -- Joseph Moore <joseph.moore@intel.com>  Thu, 31 Mar 2022 14:42:42 -0400
+
+mercury (2.1.0~rc4-6) unstable; urgency=medium
+  [ Alexander Oganezov ]
+  * Apply cxi provider patch
+
+ -- Alexander Oganezov <alexander.a.oganezov@intel.com>  Fri, 11 Mar 2022 08:47:42 -0400
+
+mercury (2.1.0~rc4-5) unstable; urgency=medium
+  [ Alexander Oganezov ]
+  * Apply DAOS-9561 workaround patch to na_ofi.c
+
+ -- Alexander Oganezov <alexander.a.oganezov@intel.com>  Tue, 22 Feb 2022 08:47:42 -0400
+
+mercury (2.1.0~rc4-3) unstable; urgency=medium
+  [ Alexander Oganezov ]
+  * remove DAOS-9173 workaround patch to na_ofi.c
+  * add cpu utilization fix to mercury
+
+ -- Alexander Oganezov <alexander.a.oganezov@intel.com>  Thu, 23 Dec 2021 08:47:42 -0400
+
+mercury (2.1.0~rc4-2) unstable; urgency=medium
+  [ Alexander Oganezov ]
+  * Apply DAOS-9173 workaround patch to na_ofi.c
+
+ -- Alexander Oganezov <alexander.a.oganezov@intel.com>  Tue, 7 Dec 2021 08:47:42 -0400
+
+mercury (2.1.0~rc4-1) unstable; urgency=medium
+  [ Alexander Oganezov ]
+  * Update to release v2.1.0rc4
+
+ -- Alexander Oganezov <alexander.a.oganezov@intel.com>  Tue, 30 Nov 2021 08:47:42 -0400
+
+mercury (2.1.0~rc2-1) unstable; urgency=medium
+  [ Alexander Oganezov ]
+  * Update to release v2.1.0rc2
+
+ -- Alexander Oganezov <alexander.a.oganezov@intel.com>  Tue, 12 Oct 2021 08:47:42 -0400
+
+mercury (2.0.1-1) unstable; urgency=medium
+  [ Alexander Oganezov ]
+  * Update to release v2.0.1
+
+ -- Alexander Oganezov <alexander.a.oganezov@intel.com>  Fri, 14 May 2021 08:47:42 -0400
+
+mercury (2.0.1~rc1-1) unstable; urgency=medium
+  [ Alexander Oganezov ]
+  * Update to release v2.0.1rc1
+
+ -- Alexander Oganezov <alexander.a.oganezov@intel.com>  Wed, 20 Jan 2021 08:47:42 -0400
+
+mercury (2.0.0-1) unstable; urgency=medium
+  [ Alexander Oganezov ]
+  * Update to release v2.0.0
+
+ -- Alexander Oganezov <alexander.a.oganezov@intel.com>  Wed, 18 Nov 2020 08:47:42 -0400
+
+mercury (2.0.0~rc3-1) unstable; urgency=medium
+  [ Alexander Oganezov ]
+  * Update to release v2.0.0rc3
+
+ -- Alexander Oganezov <alexander.a.oganezov@intel.com>  Wed, 28 Oct 2020 08:47:42 -0400
+
+mercury (2.0.0~rc2-1) unstable; urgency=medium
+  [ Alexander Oganezov ]
+  * Update to release v2.0.0rc2
+
+ -- Alexander Oganezov <alexander.a.oganezov@intel.com>  Mon, 12 Oct 2020 08:47:42 -0400
+
+mercury (2.0.0~rc1-1) unstable; urgency=medium
+  [ Brian J. Murrell ]
+  * Update to release v2.0.0rc1
+
+ -- Brian J. Murrell <brian.murrell@intel.com>  Tue, 18 Aug 2020 08:47:42 -0400
+
+mercury (1.0.1-21) unstable; urgency=medium
+  [ Alexander Oganezov ]
+  * Removed sl_patch on top of 7b529b
+  * Updated to 9889a0
+
+ -- Alexander Oganezov <alexander.a.oganezov@intel.com>  Mon, 2 Dec 2019 10:17:28 -0400
+
+mercury (1.0.1-20) unstable; urgency=medium
+  [ Alexander Oganezov ]
+  * sl_patch on top of 7b529b
+
+ -- Alexander Oganezov <alexander.a.oganezov@intel.com>  Thu, 31 Oct 2019 10:17:28 -0400
+
+mercury (1.0.1-19) unstable; urgency=medium
+  [ Alexander Oganezov ]
+  * Update to 7b529b
+
+ -- Alexander Oganezov <alexander.a.oganezov@intel.com>  Wed, 23 Oct 2019 10:17:28 -0400
+
+mercury (1.0.1-18) unstable; urgency=medium
+  [ Alexander Oganezov ]
+  * Reversal of Update to 6a8b693
+
+ -- Alexander Oganezov <alexander.a.oganezov@intel.com>  Tue, 22 Oct 2019 10:17:28 -0400
+
+mercury (1.0.1-17) unstable; urgency=medium
+  [ Alexander Oganezov ]
+  * Update to 6a8b693 to get latest changes
+
+ -- Alexander Oganezov <alexander.a.oganezov@intel.com>  Mon, 21 Oct 2019 10:17:28 -0400
+
+mercury (1.0.1-16) unstable; urgency=medium
+  [ Alexander Oganezov ]
+  * Fix mercury.spec file to apply patch for 616fee properly
+
+ -- Alexander Oganezov <alexander.a.oganezov@intel.com>  Wed, 16 Oct 2019 10:17:28 -0400
+
+mercury (1.0.1-15) unstable; urgency=medium
+  [ Alexander Oganezov ]
+  * Update to 616fee to get latest changes
+
+ -- Alexander Oganezov <alexander.a.oganezov@intel.com>  Tue, 15 Oct 2019 10:17:28 -0400
+
+mercury (1.0.1-14) unstable; urgency=medium
+  [ Brian J. Murrell ]
+  * Update to cc0807 to include the HG_Cancel() fix.
+  * Update to f0b9f9 to get latest changes
+
+ -- Brian J. Murrell <brian.murrell@intel.com>  Wed, 02 Oct 2019 19:09:28 -0400
+
+mercury (1.0.1-13) unstable; urgency=medium
+  [ Brian J. Murrell ]
+  * Once again revert previous update
+
+ -- Brian J. Murrell <brian.murrell@intel.com>  Wed, 02 Oct 2019 18:00:31 -0400
+
+mercury (1.0.1-12) unstable; urgency=medium
+
+  [ Brian J. Murrell ]
+  * Update to cc0807 to include the HG_Cancel() fix.
+  * Update to f0b9f9 to get latest changes
+
+ -- Brian J. Murrell <brian.murrell@intel.com>  Wed, 02 Oct 2019 11:42:18 -0400
+
+mercury (1.0.1-10) unstable; urgency=medium
+
+  [ Brian J. Murrell ]
+  * Update to cc0807 to include the HG_Cancel() fix.
+  * Update to f0b9f9 to get latest changes
+
+ -- Brian J. Murrell <brian.murrell@intel.com>  Fri, 20 Sep 2019 20:02:46 +0000
+
+mercury (1.0.1-9) unstable; urgency=medium
+
+  [ Brian J. Murrell ]
+  * Revert previous update
+  * Experimental build for daos-stack project
+
+ -- Brian J. Murrell <brian.murrell@intel.com>  Thu, 08 Aug 2019 18:50:29 +0000
+
+mercury (1.0.1-8) unstable; urgency=medium
+
+  [ Yulu Jia ]
+  * Re-applied patches from upstream and roll back version to 1.0.1
+
+mercury (1.0.1-6) unstable; urgency=medium
+
+  [ Brian J. Murrell ]
+  * Roll back the version to 1.0.1
+
+ -- Brian J. Murrell <brian.murrell@intel.com>  Thu, 01 Aug 2019 22:22:52 +0000
+
+mercury (1.0.1-5) unstable; urgency=medium
+
+  [ Yulu Jia ]
+  * Applied patches from upstream
+
+mercury (1.0.1-1) unstable; urgency=medium
+
+  [ John Malmberg ]
+  * Patched Upstream release
+  * Experimental build for daos-stack project
+
+ -- John Malmberg <john.e.malmberg@intel.com>  Mon, 17 Jun 2019 19:43:11 +0000

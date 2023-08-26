@@ -1,0 +1,47 @@
+Source: mercury
+Priority: optional
+Maintainer: daos-stack <daos@daos.groups.io>
+Build-Depends: debhelper (>= 10),
+               cmake,
+               libboost-dev,
+               libevent-dev,
+               libfabric-dev (>= 1.14.0-1),
+               pkg-config
+Standards-Version: 4.1.2
+Section: libs
+Homepage: https://mercury-hpc.github.io/
+Vcs-Git: https://github.com/mercury-hpc/mercury.git
+Vcs-Browser: https://github.com/mercury-hpc/mercury.git
+
+Package: libmercury-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: same
+Depends: libmercury1 (= ${binary:Version}), ${misc:Depends}
+Description: high-performance Computing C RPC library
+ Support for remote function calls which include large data arguments.
+ .
+ Mercury is partially supported by DOE Office of Science Advanced Scientific
+ Computing Research (ASCR) research and by NSF Directorate for Computer &
+ Information Science & Engineering (CISE) Division of Computing and
+ Communication Foundations (CCF) core program funding.  Mercury is part of the
+ Mochi project.
+ .
+ This package is needed to compile programs against mercury.
+ It contains the header files and links needed for compiling.
+
+
+Package: libmercury1
+Architecture: any
+Multi-Arch: same
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: high-performance Computing C RPC library
+ Support for remote function calls which include large data arguments.
+ .
+ Mercury is partially supported by DOE Office of Science Advanced Scientific
+ Computing Research (ASCR) research and by NSF Directorate for Computer &
+ Information Science & Engineering (CISE) Division of Computing and
+ Communication Foundations (CCF) core program funding.  Mercury is part of the
+ Mochi project.
+ .
+ This package contains the shared libraries.
