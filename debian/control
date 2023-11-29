@@ -6,6 +6,7 @@ Build-Depends: debhelper (>= 10),
                libboost-dev,
                libevent-dev,
                libfabric-dev (>= 1.14.0-1),
+               libucx-dev (= 1.14.0-1),
                pkg-config
 Standards-Version: 4.1.2
 Section: libs
