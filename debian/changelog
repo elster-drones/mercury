@@ -1,3 +1,28 @@
+mercury (2.4.0rc1-1) unstable; urgency=medium
+
+  [ Jerome Soumagne ]
+  * CI: update for intel compilers
+  * NA Perf: ensure perf tests wait on send completion
+  * CI: update OFI to 1.20.0
+  * NA OFI: remove excessive MR count warning message
+  * NA OFI: attempt to distribute multi-NIC domains based on selected CPU ID
+  * HG perf: autodetect MPI implementation
+  * CI: ensure MPI uses tcp on Tsan builds
+  * NA Test: remove unused DRC tests
+  * HG util: add missing prototype to hg_atomic_fence
+  * NA OFI: fix compiler warning on MacOS
+  * NA Test: add missing line at end of file in na_test_mpi.c
+  * NA: add support for traffic_class init info
+  * Bump HG version to 2.4.0rc1
+  * NA test: remove could not find MPI message
+
+  [ Erik Ziegenbalg ]
+  * debian
+  * enable ucx
+  * Move back to Quilt
+
+ -- Erik Ziegenbalg <erik@ezthinking.org>  Sat, 17 Feb 2024 19:28:18 -0800
+
 mercury (2.3.1-1) unstable; urgency=medium
   [ Jerome Soumagne ]
   * Update to 2.3.1
