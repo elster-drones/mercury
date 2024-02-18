@@ -1,4 +1,23 @@
-mercury (2.3.0) unstable; urgency=medium
+mercury (2.3.1-1) unstable; urgency=medium
+  [ Jerome Soumagne ]
+  * Update to 2.3.1
+  * Add json-c dependency for hg_info JSON output support
+
+ -- Jerome Soumagne <jerome.soumagne@intel.com>  Fri, 27 Oct 2023 09:00:00 -0600
+
+mercury (2.3.1~rc1-2) unstable; urgency=medium
+  [ Joseph Moore ]
+  * Add patch to na_ucx.c to force retry of out-of-memory error
+
+ -- Joseph Moore <joseph.moore@intel.com>  Tue, 26 Sep 2023 07:04:02 -0500
+
+mercury (2.3.1~rc1-1) unstable; urgency=medium
+  [ Jerome Soumagne ]
+  * Update to 2.3.1rc1
+
+ -- Jerome Soumagne <jerome.soumagne@intel.com>  Tue, 29 Aug 2023 11:00:00 -0600
+
+mercury (2.3.0-1) unstable; urgency=medium
   [ Jerome Soumagne ]
   * Update to 2.3.0
   * Add hg_info tool
