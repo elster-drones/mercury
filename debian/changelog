@@ -1,4 +1,76 @@
-mercury (2.3.0) unstable; urgency=medium
+mercury (2.4.0) unstable; urgency=medium
+  [ Jerome Soumagne ]
+  * Update to 2.4.0
+  * Require libfabric >= 1.20
+
+ -- Jerome Soumagne <jerome.soumagne@intel.com>  Mon, 04 Nov 2024 09:00:00 -0600
+
+mercury (2.4.0~rc5-5) unstable; urgency=medium
+  [ Joseph Moore ]
+  * Update patch to na_ucx.c to set thread-safe on clients.
+
+ -- Joseph Moore <joseph.moore@intel.com>  Mon, 07 Oct 2024 10:00:00 -0600
+
+mercury (2.4.0~rc5-4) unstable; urgency=medium
+  [ Joseph Moore ]
+  * Update patch to na_ucx.c to add fix for connection accept.
+
+ -- Joseph Moore <joseph.moore@intel.com>  Thu, 26 Sep 2024 10:00:00 -0600
+
+mercury (2.4.0~rc5-3) unstable; urgency=medium
+  [ Brian J. Murrell ]
+  * Add --without ucx build switch
+
+ -- Brian J. Murrell <brian.murrell@intel.com>  Wed, Sep 04 2024 09:00:00-0600
+
+mercury (2.4.0~rc5-2) unstable; urgency=medium
+  [ Joseph Moore ]
+  * Add patch to na_ucx.c to check ep in key_resolve
+
+ -- Joseph Moore <joseph.moore@intel.com>  Thu, 29 Aug 2024 09:00:00 -0600
+
+mercury (2.4.0~rc5-1) unstable; urgency=medium
+  [ Jerome Soumagne ]
+  * Update to 2.4.0rc5
+
+ -- Jerome Soumagne <jerome.soumagne@intel.com>  Mon, 26 Aug 2024 16:00:00 -0600
+
+mercury (2.4.0~rc4-1) unstable; urgency=medium
+  [ Jerome Soumagne ]
+  * Update to 2.4.0rc4
+  * Remove previous patches now included in 2.4
+  * Require libfabric >= 1.15
+
+ -- Jerome Soumagne <jerome.soumagne@intel.com>  Fri, 02 Aug 2024 09:00:00 -0600
+
+mercury (2.3.1-3) unstable; urgency=medium
+  [ Jerome Soumagne ]
+  * Add patch to fix ucx hg_info
+  * Add patch to remove ofi cxi MR warnings
+  * Add patch to fix potential segfault on log free
+
+ -- Jerome Soumagne <jerome.soumagne@intel.com>  Tue, 19 Mar 2024 09:00:00 -0600
+
+mercury (2.3.1-1) unstable; urgency=medium
+  [ Jerome Soumagne ]
+  * Update to 2.3.1
+  * Add json-c dependency for hg_info JSON output support
+
+ -- Jerome Soumagne <jerome.soumagne@intel.com>  Fri, 27 Oct 2023 09:00:00 -0600
+
+mercury (2.3.1~rc1-2) unstable; urgency=medium
+  [ Joseph Moore ]
+  * Add patch to na_ucx.c to force retry of out-of-memory error
+
+ -- Joseph Moore <joseph.moore@intel.com>  Tue, 26 Sep 2023 07:04:02 -0500
+
+mercury (2.3.1~rc1-1) unstable; urgency=medium
+  [ Jerome Soumagne ]
+  * Update to 2.3.1rc1
+
+ -- Jerome Soumagne <jerome.soumagne@intel.com>  Tue, 29 Aug 2023 11:00:00 -0600
+
+mercury (2.3.0-1) unstable; urgency=medium
   [ Jerome Soumagne ]
   * Update to 2.3.0
   * Add hg_info tool
