@@ -31,7 +31,8 @@ cmake_options =                                              \
     -DMERCURY_USE_XDR:BOOL=OFF                               \
     -DNA_USE_SM:BOOL=ON                                      \
     -DNA_USE_DYNAMIC_PLUGINS=ON                              \
-    -DNA_USE_OFI:BOOL=ON
+    -DNA_USE_OFI:BOOL=ON                                     \
+    -DNA_USE_UCX:BOOL=ON                                     \
     $(NULL)
 
 #    -DNA_USE_UCX:BOOL=ON                                     \
