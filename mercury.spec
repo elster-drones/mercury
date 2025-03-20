@@ -17,7 +17,7 @@ URL:      http://mercury-hpc.github.io/
 Source0:  https://github.com/mercury-hpc/%{name}/releases/download/v%{dl_version}/%{name}-%{dl_version}.tar.bz2
 Patch0:   na_ucx.patch
 
-BuildRequires:  libfabric-devel >= 1.20
+BuildRequires:  libfabric-devel >= 1.18
 BuildRequires:  cmake
 BuildRequires:  boost-devel
 BuildRequires:  gcc-c++
