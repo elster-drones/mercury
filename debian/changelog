@@ -21,7 +21,7 @@ mercury (2.4.0~rc5-3) unstable; urgency=medium
   [ Brian J. Murrell ]
   * Add --without ucx build switch
 
- -- Brian J. Murrell <brian.murrell@intel.com>  Wed, Sep 04 2024 09:00:00-0600
+ -- Brian J. Murrell <brian.murrell@intel.com>  Wed, 04 Sep 2024 09:00:00 -0600
 
 mercury (2.4.0~rc5-2) unstable; urgency=medium
   [ Joseph Moore ]
